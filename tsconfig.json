@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    // Module system
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ES2023",
+
+    // Node.js environment
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // tsx handles transpilation, not tsc
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+
+    // Type checking
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*"]
+}
